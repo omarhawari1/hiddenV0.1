@@ -286,7 +286,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5762912242719967449, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1742977290}
   m_SourcePrefab: {fileID: 100100000, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
 --- !u!1001 &1186774250
 PrefabInstance:
@@ -448,6 +451,25 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1742977285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5762912242719967449, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
+  m_PrefabInstance: {fileID: 1166557344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1742977290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742977285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72e5baadd583db458945820a32b99f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Resolution: 1
+  DefaultSpotCookie: {fileID: 0}
 --- !u!1001 &1938597053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15694,18 +15716,6 @@ Transform:
   m_Father: {fileID: 6382336700198324956}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5756920651584240019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6348188622991856969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5758034797342212603
 GameObject:
   m_ObjectHideFlags: 0
@@ -22125,7 +22135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8560554705491011534}
   - component: {fileID: 7145884107615531659}
-  - component: {fileID: 5756920651584240019}
+  - component: {fileID: 8560554705491011535}
   m_Layer: 0
   m_Name: Spot Light (1)
   m_TagString: Untagged
@@ -28735,6 +28745,32 @@ Transform:
   m_Father: {fileID: 3540113184803922373}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 162.66, y: 0, z: 0}
+--- !u!114 &8560554705491011535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348188622991856969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888ac570a41eab94a99e772ba3b96d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleCount: 12
+  ScatteringCoef: 0.192
+  ExtinctionCoef: 0.1
+  SkyboxExtinctionCoef: 0.915
+  MieG: 0.038
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 1
+  NoiseScale: 0.15
+  NoiseIntensity: 3.44
+  NoiseIntensityOffset: 0.12
+  NoiseVelocity: {x: 1, y: 0.3}
+  MaxRayLength: 400
 --- !u!23 &8563978479941772569
 MeshRenderer:
   m_ObjectHideFlags: 0
