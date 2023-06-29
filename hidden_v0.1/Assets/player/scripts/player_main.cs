@@ -43,8 +43,10 @@ public class player_main : MonoBehaviour
     [SerializeField]private float baseStepSpeed;
     [SerializeField]private float sprintStepSpeed;
     [SerializeField]private AudioSource footstepSource = default;
-    [Header("grass:")]
+    [Header("Grass:")]
     [SerializeField]private AudioClip[] grassFootstepAudio = default;
+    [Header("Wood:")]
+    [SerializeField] private AudioClip[] woodFootstepAudio = default;
 
     private AudioClip lastFootstepAudio;
     private AudioClip newFootStepAudio;
@@ -145,17 +147,27 @@ public class player_main : MonoBehaviour
             {
                 if (hit.transform.tag == "Grass")
                 {
-                    newFootStepAudio = grassFootstepAudio[Random.Range(0, grassFootstepAudio.Length - 1)];
-                    while (newFootStepAudio == lastFootstepAudio)
-                    {
-                        newFootStepAudio = grassFootstepAudio[Random.Range(0, grassFootstepAudio.Length - 1)];
-                    }
-                    footstepSource.PlayOneShot(newFootStepAudio);
-                    lastFootstepAudio = newFootStepAudio;
+                    Debug.Log("grass");
+                    callFootstep(grassFootstepAudio);
+                }
+                else if (hit.transform.tag == "Wood")
+                {
+                    Debug.Log("grass");
+                    callFootstep(woodFootstepAudio);
                 }
             }
         }
 
+    }
+    private void callFootstep(AudioClip[] audioClip)
+    {
+        newFootStepAudio = audioClip[Random.Range(0, audioClip.Length - 1)];
+        while (newFootStepAudio == lastFootstepAudio)
+        {
+            newFootStepAudio = audioClip[Random.Range(0, audioClip.Length - 1)];
+        }
+        footstepSource.PlayOneShot(newFootStepAudio);
+        lastFootstepAudio = newFootStepAudio;
     }
     private void handle_Sprint()
     {
