@@ -147,12 +147,10 @@ public class player_main : MonoBehaviour
             {
                 if (hit.transform.tag == "Grass")
                 {
-                    Debug.Log("grass");
                     callFootstep(grassFootstepAudio);
                 }
                 else if (hit.transform.tag == "Wood")
                 {
-                    Debug.Log("grass");
                     callFootstep(woodFootstepAudio);
                 }
             }
@@ -166,6 +164,7 @@ public class player_main : MonoBehaviour
         {
             newFootStepAudio = audioClip[Random.Range(0, audioClip.Length - 1)];
         }
+        if (footstepSource.isPlaying) { return; }
         footstepSource.PlayOneShot(newFootStepAudio);
         lastFootstepAudio = newFootStepAudio;
     }
