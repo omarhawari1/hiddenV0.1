@@ -202,7 +202,7 @@ public class player_main : MonoBehaviour
             if (Input.GetKeyDown(k_openDoor))
             {
                 doorAnimationComponent = hit.transform.GetComponent<Animator>();
-                doorAnimationComponent.Play("doorOpen");
+                doorAnimationComponent.Play("doorOpenAnim");
             }
         }
         else
