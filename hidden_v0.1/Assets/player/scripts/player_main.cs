@@ -17,6 +17,7 @@ public class player_main : MonoBehaviour
     public bool canMove;
     public bool canLook;
     public bool flashlightLerp;
+    public bool canOpenDoors;
 
     [Header("player settings:")]
     public float mouseSens;
@@ -29,6 +30,7 @@ public class player_main : MonoBehaviour
     [SerializeField]private KeyCode K_flashlight;
     [SerializeField]private KeyCode k_sprint;
     [SerializeField]private KeyCode k_pause;
+    [SerializeField] private KeyCode k_openDoor;
 
     [Header("set componenets: ")]
     [SerializeField]private GameObject flashLight;
@@ -38,6 +40,11 @@ public class player_main : MonoBehaviour
     [SerializeField] private Animator headbobAnimator;
     [SerializeField] private Transform flashlightHolder;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private GameObject crossHairInteractable;
+
+    [Header("Doors:")]
+    [SerializeField] private float doorDistanceToInteract;
+    [SerializeField] private LayerMask doorLayer;
 
     [Header("footsteps: ")]
     [SerializeField]private float baseStepSpeed;
@@ -60,6 +67,8 @@ public class player_main : MonoBehaviour
     private Transform playerCamera;
     private float speed;
     private Vector3 flashLightVectOffset;
+
+    private Animator doorAnimationComponent;
 
 
     //public
@@ -106,6 +115,10 @@ public class player_main : MonoBehaviour
         if(canMove)
         {
             movement();
+        }
+        if(canOpenDoors)
+        {
+            handle_Doors();
         }
         inputs();
     }
@@ -178,6 +191,23 @@ public class player_main : MonoBehaviour
         else
         {
             speed = normalSpeed;
+        }
+    }
+    private void handle_Doors()
+    {
+        RaycastHit hit;
+        if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, doorDistanceToInteract, doorLayer))
+        {
+            crossHairInteractable.SetActive(true);
+            if (Input.GetKeyDown(k_openDoor))
+            {
+                doorAnimationComponent = hit.transform.GetComponent<Animator>();
+                doorAnimationComponent.Play("doorOpen");
+            }
+        }
+        else
+        {
+            crossHairInteractable.SetActive(false);
         }
     }
     private void handle_Flashlight()
