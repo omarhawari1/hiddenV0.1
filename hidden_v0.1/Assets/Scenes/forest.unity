@@ -348,11 +348,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 474340, guid: 7c026980fc17fa642b7a22557ebb0007, type: 3}
   m_PrefabInstance: {fileID: 188953861}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &248236253 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3968377540880210602, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-  m_PrefabInstance: {fileID: 1166557344}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &317560073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,89 +1478,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1297897643258480813, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: m_StepOffset
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 2411400213454844698, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
       propertyPath: m_Name
       value: _player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3968377540880210602, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: k_openDoor
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: normalSpeed
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: canOpenDoors
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: doorLayer.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: crossHairInteractable
-      value: 
-      objectReference: {fileID: 248236253}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: doorDistanceToInteract
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8e001351cd7065543a068386cde4c960, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: c41fb169b2991c247a5466e00faa6639, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 76c66b3ae15685a45a334b0628d1edd1, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: cb9aa4db4b3a12147bf2fe3d88fee270, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: 2e832dbb2c7c9ba4e97fd3005fe850b7, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3af6e561e364a274aa306461461c386b, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: 30668cf6c5cbfef478b0812fc59eb646, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[7]
-      value: 
-      objectReference: {fileID: 8300000, guid: eea9624d96ae191439615ca598fe01fa, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: a45bdfd5056ed1d4d8f667cc2498ca12, type: 3}
-    - target: {fileID: 5051111730711236510, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: woodFootstepAudio.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: ec4bd5988d7de0c41ab2d9959705dd8b, type: 3}
-    - target: {fileID: 7241530178557957809, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8265711958732390708, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
       propertyPath: m_RootOrder
