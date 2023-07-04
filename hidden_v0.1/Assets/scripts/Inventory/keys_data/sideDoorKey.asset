@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: sideDoorKey
   m_EditorClassIdentifier: 
   ID: 1
-  keyName: sideDoorKey
+  keyName: Side Door Key
+  keyPreview: {fileID: 2800000, guid: ec020380fd101414cbb7442735eb187b, type: 3}

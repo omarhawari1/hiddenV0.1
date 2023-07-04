@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class interactables : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class interactables : MonoBehaviour
     [SerializeField] private player_main player_Main;
     [SerializeField] private inventoryManager inventoryManager;
 
+
+    [Header("preview panel:")]
+    [SerializeField] private GameObject itemPreviewPanel;
+    [SerializeField] private RawImage itemPreviewImage;
+
     [Header("keys:")]
     [SerializeField] private keys sideDoorKey;
 
@@ -21,6 +27,8 @@ public class interactables : MonoBehaviour
 
     private Transform playerCamera;
     private KeyCode k_Interact;
+
+    private bool gamePaused = false;
 
 
     private void Start()
@@ -34,6 +42,18 @@ public class interactables : MonoBehaviour
         if (player_Main.canUseInteractables)
         {
             handle_Interactables();
+        }
+
+        if(gamePaused == true)
+        {
+            if(Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Time.timeScale = 1;
+                itemPreviewPanel.SetActive(false);
+                itemPreviewImage = null;
+                gamePaused = false;
+            }
         }
     }
     private void handle_Interactables()
@@ -50,6 +70,13 @@ public class interactables : MonoBehaviour
                 {
                     Destroy(hit.transform.gameObject);
                     inventoryManager.Add(hit.transform.GetComponent<assignData>().key);
+
+                    //paralize player while inspecting item:
+                    gamePaused = true;
+                    Cursor.lockState = CursorLockMode.None;
+                    Time.timeScale = 0;
+                    itemPreviewImage.texture = hit.transform.GetComponent<assignData>().key.keyPreview;
+                    itemPreviewPanel.SetActive(true);
                 }
             }
         }

@@ -8,4 +8,5 @@ public class keys : ScriptableObject
 {
     public int ID;
     public string keyName;
+    public Texture2D keyPreview;
 }
