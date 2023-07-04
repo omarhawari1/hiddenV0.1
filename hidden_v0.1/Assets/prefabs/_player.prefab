@@ -3626,6 +3626,7 @@ GameObject:
   - component: {fileID: 5288327004180067357}
   - component: {fileID: 4654988898279348248}
   - component: {fileID: 1297897643258480813}
+  - component: {fileID: 3919617058327635469}
   m_Layer: 0
   m_Name: playerController
   m_TagString: Player
@@ -3670,7 +3671,7 @@ MonoBehaviour:
   canMove: 1
   canLook: 1
   flashlightLerp: 1
-  canOpenDoors: 1
+  canUseInteractables: 1
   mouseSens: 400
   normalSpeed: 1.5
   sprintSpeed: 3
@@ -3733,9 +3734,15 @@ MonoBehaviour:
   interactablesLayer:
     serializedVersion: 2
     m_Bits: 512
+  doorLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   interactableDistance: 2
-  player_Main: {fileID: 5051111730711236510}
   eventManager: {fileID: 0}
+  player_Main: {fileID: 5051111730711236510}
+  inventoryManager: {fileID: 3919617058327635469}
+  sideDoorKey: {fileID: 11400000, guid: bdab3cfb20bd510408ff3a10ec455792, type: 2}
+  sideDoor: {fileID: 11400000, guid: 6a9316840910b0947bfbaee0489c32d5, type: 2}
 --- !u!82 &4654988898279348248
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3858,6 +3865,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3919617058327635469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137658064935957263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7597acc2f46e994fb9fef399ac8e72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
 --- !u!1 &7260705243369262519
 GameObject:
   m_ObjectHideFlags: 0

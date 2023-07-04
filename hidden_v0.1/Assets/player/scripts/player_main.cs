@@ -17,7 +17,7 @@ public class player_main : MonoBehaviour
     public bool canMove;
     public bool canLook;
     public bool flashlightLerp;
-    public bool canOpenDoors;
+    public bool canUseInteractables;
 
     [Header("player settings:")]
     public float mouseSens;
