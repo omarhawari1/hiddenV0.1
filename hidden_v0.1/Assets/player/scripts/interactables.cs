@@ -88,7 +88,6 @@ public class interactables : MonoBehaviour
             {
                 if (Input.GetKeyDown(k_Interact))
                 {
-                    hit.transform.GetComponent<AudioSource>().PlayOneShot(doorOpenAudio);
                     hit.transform.GetComponent<Animator>().Play("doorOpenAnim");
                 }
             }
