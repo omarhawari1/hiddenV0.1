@@ -3867,6 +3867,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eea9624d96ae191439615ca598fe01fa, type: 3}
   - {fileID: 8300000, guid: a45bdfd5056ed1d4d8f667cc2498ca12, type: 3}
   - {fileID: 8300000, guid: ec4bd5988d7de0c41ab2d9959705dd8b, type: 3}
+  concreteFootStepAudio:
+  - {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
+  - {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
+  - {fileID: 8300000, guid: 0909de896e9029541b92ae05fe15e4b6, type: 3}
+  - {fileID: 8300000, guid: 6ad0cf00f050bee41a2dee098475dc78, type: 3}
+  - {fileID: 8300000, guid: 7ca5a9710db4327439c9f8cb8204615e, type: 3}
+  - {fileID: 8300000, guid: 14ae706fef2303e4cb71112dbd5d250b, type: 3}
+  - {fileID: 8300000, guid: b995bc1775ea83b4b8f861763e9a1424, type: 3}
+  - {fileID: 8300000, guid: d15f7338d693f0343843a6b9096d27f6, type: 3}
   paused: 0
   flashLightState: 0
 --- !u!114 &5288327004180067357
@@ -3892,6 +3901,7 @@ MonoBehaviour:
   eventManager: {fileID: 0}
   player_Main: {fileID: 5051111730711236510}
   inventoryManager: {fileID: 3919617058327635469}
+  doorOpenAudio: {fileID: 8300000, guid: 3a4f61f971cd97d4293f588029627347, type: 3}
   itemPreviewPanel: {fileID: 3423654092208327388}
   itemPreviewImage: {fileID: 239848351590235564}
   sideDoorKey: {fileID: 11400000, guid: bdab3cfb20bd510408ff3a10ec455792, type: 2}

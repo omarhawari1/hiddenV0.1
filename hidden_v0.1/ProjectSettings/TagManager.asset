@@ -9,6 +9,7 @@ TagManager:
   - unlockedDoor
   - Key
   - lockedDoor
+  - Concrete
   layers:
   - Default
   - TransparentFX

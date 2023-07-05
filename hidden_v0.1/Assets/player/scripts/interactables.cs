@@ -13,6 +13,7 @@ public class interactables : MonoBehaviour
     [SerializeField] private eventManager eventManager;
     [SerializeField] private player_main player_Main;
     [SerializeField] private inventoryManager inventoryManager;
+    [SerializeField] private AudioClip doorOpenAudio;
 
 
     [Header("preview panel:")]
@@ -87,6 +88,7 @@ public class interactables : MonoBehaviour
             {
                 if (Input.GetKeyDown(k_Interact))
                 {
+                    hit.transform.GetComponent<AudioSource>().PlayOneShot(doorOpenAudio);
                     hit.transform.GetComponent<Animator>().Play("doorOpenAnim");
                 }
             }

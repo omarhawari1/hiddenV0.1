@@ -49,6 +49,8 @@ public class player_main : MonoBehaviour
     [SerializeField]private AudioClip[] grassFootstepAudio = default;
     [Header("Wood:")]
     [SerializeField] private AudioClip[] woodFootstepAudio = default;
+    [Header("Concrete")]
+    [SerializeField] private AudioClip[] concreteFootStepAudio = default;
 
     private AudioClip lastFootstepAudio;
     private AudioClip newFootStepAudio;
@@ -154,6 +156,10 @@ public class player_main : MonoBehaviour
                 else if (hit.transform.tag == "Wood")
                 {
                     callFootstep(woodFootstepAudio);
+                }
+                else if(hit.transform.tag == "Concrete")
+                {
+                    callFootstep(concreteFootStepAudio);
                 }
             }
         }
