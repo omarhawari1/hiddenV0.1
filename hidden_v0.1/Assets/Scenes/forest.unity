@@ -2707,26 +2707,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: _player
       objectReference: {fileID: 0}
-    - target: {fileID: 3423654092208327388, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4687878302093732362, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: m_fontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4687878302093732362, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 4687878302093732362, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4687878302093732362, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5288327004180067357, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
       propertyPath: eventManager
       value: 
@@ -2776,8 +2756,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 4722381924301017535, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f437f0d1df41ed43abf3f8f1b51cf5a, type: 3}
